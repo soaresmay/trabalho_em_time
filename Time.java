@@ -1,14 +1,9 @@
 package trabalhoTime;
 
 public class Time {
-<<<<<<< HEAD
+
     private String nome = "Flamengo";
     private String categoria = "Futebol";
-=======
-
-    private String nome = "indefinido";
-    private String categoria = "futebol";
->>>>>>> e44f64ea2bf768043c425e47fe56a90953f9d9ee
     private String historico = "indefinido";
     private int anoCriacao = 2019;
     private int quantidadeSocios = 0;
@@ -68,14 +63,9 @@ public class Time {
 
     }
     public void contagemRegressiva(){
-        calculo = (100 - idade);
+        
+		int calculo = (100 - CalcularIdade());
 
         System.out.println("faltam" + calculo + "para o centenario");
     }
-<<<<<<< HEAD
-
-
 }
-=======
-}
->>>>>>> e44f64ea2bf768043c425e47fe56a90953f9d9ee
