@@ -2,12 +2,6 @@ package trabalhoTime;
 
 public class Time {
 
-    private String nome = "Flamengo";
-    private String categoria = "Futebol";
-    private String historico = "indefinido";
-    private int anoCriacao = 2019;
-    private int quantidadeSocios = 0;
-
     public Time(String nome, String categoria) {
         super();
         this.nome = nome;
@@ -46,8 +40,22 @@ public class Time {
         this.quantidadeSocios = quantidadeSocios;
     }
 
+<<<<<<< HEAD
     public int CalcularIdade() {
         return 2009 - anoCriacao;
+=======
+    public int CalcularIdade(int idade) {
+        return idade = 2019 - anoCriacao;
     }
 
+    public void imprimeInfo() {
+        System.out.println(
+                get.nome + get.anoCriacao + get.categoria + get.historico + get.quantidadeSocios + get.CalcularIdade);
+>>>>>>> 49edbff0abce9d0b6cf04fd099176322e79229aa
+    }
+
+    public void adicionarSocios(final int novoSocios) {
+        this.quantidadeSocios += novoSocios;
+
+    }
 }
