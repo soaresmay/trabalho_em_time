@@ -63,9 +63,13 @@ public class Time {
 
     }
     public void contagemRegressiva(){
-        calculo = (100 - idade);
+        
+		int calculo = (100 - CalcularIdade());
 
         System.out.println("faltam" + calculo + "para o centenario");
     }
 
+
 }
+
+
