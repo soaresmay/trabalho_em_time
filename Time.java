@@ -1,7 +1,7 @@
 package trabalhoTime;
 
 public class Time {
-
+	
     public Time(String nome, String categoria) {
         super();
         this.nome = nome;
