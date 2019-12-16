@@ -3,10 +3,9 @@ package trabalhoTime;
 public class Time {
 
     private String nome = "indefinido";
-    private String categoria = "indefinido";
+    private String categoria = "futebol";
     private String historico = "indefinido";
-    private int futebol = 0;
-    private int anoCriacao = 0;
+    private int anoCriacao = 2019;
     private int quantidadeSocios = 0;
 
     public Time(String nome, String categoria) {
@@ -55,7 +54,7 @@ public class Time {
 
     public void imprimeInfo() {
         System.out.println(
-                nome + anoCriacao + categoria + historico + quantidadeSocios + CalcularIdade(0));
+                nome + anoCriacao + categoria + historico + quantidadeSocios + CalcularIdade());
     }
 
     public void adicionarSocios(final int novoSocios) {
