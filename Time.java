@@ -28,7 +28,11 @@ private int quantidadeSocios = 0;
     public void setQuantidadeSocios(int quantidadeSocios) {
         this.quantidadeSocios = quantidadeSocios;
     }
-
-	}
-
+    public int CalcularIdade() {
+        return 2009 - anoCriacao;
+    }
+public void  adicionarSocios(final int novoSocios ) {
+	this.quantidadeSocios += novoSocios;
+}
+}
 
