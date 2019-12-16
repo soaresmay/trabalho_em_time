@@ -46,8 +46,14 @@ public class Time {
         this.quantidadeSocios = quantidadeSocios;
     }
 
+<<<<<<< HEAD
    
 
 
+=======
+    public int CalcularIdade() {
+        return 2009 - anoCriacao;
+    }
+>>>>>>> eddfa9e6649f9f083f0ea007f2a78ac921b53588
 
 }
