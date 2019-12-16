@@ -4,9 +4,8 @@ public class Time {
 
     private String nome;
     private String categoria;
-    private int futebol;
     private String historico;
-    private int anoCriacao;
+    private int anoCriacao = 0;
     private int quantidadeSocios;
 
     public Time(String nome, String categoria) {
@@ -27,8 +26,12 @@ public class Time {
         this.quantidadeSocios = quantidadeSocios;
     }
 
-    public int CalcularIdade() {
-        return 2009 - anoCriacao;
+    public int CalcularIdade(int idade) {
+        return idade = 2019 - anoCriacao;
+    }
+
+    public void imprimeInfo() {
+        System.out.println(nome + anoCriacao + categoria + historico + quantidadeSocios + CalcularIdade(idade));
     }
 
 }
