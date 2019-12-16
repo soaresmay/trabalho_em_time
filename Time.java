@@ -31,7 +31,8 @@ public class Time {
     }
 
     public void imprimeInfo() {
-        System.out.println(nome + anoCriacao + categoria + historico + quantidadeSocios + CalcularIdade(idade));
+        System.out.println(
+                get.nome + get.anoCriacao + get.categoria + get.historico + get.quantidadeSocios + get.CalcularIdade);
     }
 
 }
