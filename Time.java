@@ -2,24 +2,38 @@ package trabalhoTime;
 
 public class Time {
 
-    private String nome;
-    private String categoria;
-    private String historico;
-    private int anoCriacao = 0;
-    private int quantidadeSocios;
-
     public Time(String nome, String categoria) {
         super();
         this.nome = nome;
         this.categoria = categoria;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public String getHistorico() {
+        return historico;
+    }
+
     public void setHistorico(String historico) {
         this.historico = historico;
     }
 
+    public int getAnoCriacao() {
+        return anoCriacao;
+    }
+
     public void setAnoCriacao(int anoCriacao) {
         this.anoCriacao = anoCriacao;
+    }
+
+    public int getQuantidadeSocios() {
+        return quantidadeSocios;
     }
 
     public void setQuantidadeSocios(int quantidadeSocios) {
@@ -35,4 +49,8 @@ public class Time {
                 get.nome + get.anoCriacao + get.categoria + get.historico + get.quantidadeSocios + get.CalcularIdade);
     }
 
+    public void adicionarSocios(final int novoSocios) {
+        this.quantidadeSocios += novoSocios;
+
+    }
 }
