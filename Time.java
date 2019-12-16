@@ -18,8 +18,16 @@ public class Time {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String getCategoria() {
         return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public String getHistorico() {
@@ -46,26 +54,25 @@ public class Time {
         this.quantidadeSocios = quantidadeSocios;
     }
 
-
     public int CalcularIdade() {
         return 2019 - anoCriacao;
 
-  }
+    }
 
     public void imprimeInfo() {
-        System.out.println(
-                nome + anoCriacao + categoria + historico + quantidadeSocios + CalcularIdade());
+        System.out.println(nome + anoCriacao + categoria + historico + quantidadeSocios + CalcularIdade());
     }
 
     public void adicionarSocios(final int novoSocios) {
         this.quantidadeSocios += novoSocios;
 
-
     }
-    public void contagemRegressiva(){
-        
-		int calculo = (100 - CalcularIdade());
+
+    public void contagemRegressiva() {
+
+        int calculo = (100 - CalcularIdade());
 
         System.out.println("faltam" + calculo + "para o centenario");
     }
+
 }
