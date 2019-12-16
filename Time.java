@@ -47,9 +47,11 @@ public class Time {
         this.quantidadeSocios = quantidadeSocios;
     }
 
-    public int CalcularIdade(int idade) {
-        return idade = 2019 - anoCriacao;
-    }
+
+    public int CalcularIdade() {
+        return 2019 - anoCriacao;
+
+  }
 
     public void imprimeInfo() {
         System.out.println(
