@@ -1,5 +1,7 @@
 package trabalhoTime;
 
+import java.util.Scanner;
+
 public class Time {
 
     private String nome = "Flamengo";
@@ -68,4 +70,14 @@ public class Time {
 
         System.out.println("faltam" + calculo + "para o centenario");
     }
+    
+    public void imprimirMensagem() {
+    
+    	Scanner ler = new Scanner(System.in);
+    	
+    	System.out.println("digite uma menssagem: ");
+    	ler.hasNextLine();
+    	System.out.println("Menssagem recebida:" + ler );
+    }
+    
 }
